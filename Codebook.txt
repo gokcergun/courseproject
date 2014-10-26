@@ -1,0 +1,91 @@
+Human Activity Recognition Using Smartphones Dataset - Tidydata
+Tidydata: Average mean and standard deviation of the every specific measure for each subject and for each activity type.
+180 observations of 68 variables. 
+
+[1] "subject"  int
+Subject who performed the activity for each window sample. Its range is from 1 to 30.                                                       
+[2] "activity" Factor
+6 levels "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS
+" "SITTING
+" "STANDING" "LAYING" 
+
+IMPORTANT: Following variables shows the average of each measure (that is described below) for each activity and for each subject. 
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals timeaccelerometer-XYZaxis. These time domain signals were captured at a constant rate of 50Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.Similarly, the acceleration signal was then separated into body and gravity acceleration signals (timebodyaccelerometer-XYZaxis and timegravityaccelerometer-XYZaxis) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.       
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (timebodyaccelerometerjerksignals-XYZaxis and timebodygyroscopejerksignals-XYZaxis). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (timebodyccelerometermagnitude, tgravityccelerometermagnitude, timebodyccelerometerjerksignalsmagnitude, timebodygyroscopemagnitude, timebodygyroscopejerksignalsmagnitude).   
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing frequencybodyaccelerometer-XYZaxis, frequencybodyaccelerometerjerksignals-XYZaxis, frequencybodygyroscope-XYZ, frequencybodyaccelerometerjerksignalsmagnitude, frequencybodygyroscopemagnitude, frequencybodygyroscopejerksignalsmagnitude. (frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+Mean() and std()were estimated from these signals. 
+
+Measures:                                                
+ [3] "timebodyaccelerometer-mean()-Xaxis"    num                                
+ [4] "timebodyaccelerometer-mean()-Yaxis"    num                                
+ [5] "timebodyaccelerometer-mean()-Zaxis"    num                               
+ [6] "timebodyaccelerometer-standarddeviation()-Xaxis"	num                       
+ [7] "timebodyaccelerometer-standarddeviation()-Yaxis"  num                     
+ [8] "timebodyaccelerometer-standarddeviation()-Zaxis"  num                     
+ [9] "timeGravityaccelerometer-mean()-Xaxis" num                                
+[10] "timeGravityaccelerometer-mean()-Yaxis" num                                
+[11] "timeGravityaccelerometer-mean()-Zaxis" num                                
+[12] "timeGravityaccelerometer-standarddeviation()-Xaxis"  num                
+[13] "timeGravityaccelerometer-standarddeviation()-Yaxis"  num                  
+[14] "timeGravityaccelerometer-standarddeviation()-Zaxis"  num                  
+[15] "timebodyaccelerometerjerksignals-mean()-Xaxis"    num                     
+[16] "timebodyaccelerometerjerksignals-mean()-Yaxis"    num                     
+[17] "timebodyaccelerometerjerksignals-mean()-Zaxis"    num                     
+[18] "timebodyaccelerometerjerksignals-standarddeviation()-Xaxis" num           
+[19] "timebodyaccelerometerjerksignals-standarddeviation()-Yaxis" num           
+[20] "timebodyaccelerometerjerksignals-standarddeviation()-Zaxis" num           
+[21] "timebodygyroscope-mean()-Xaxis"   num                                     
+[22] "timebodygyroscope-mean()-Yaxis"   num                                     
+[23] "timebodygyroscope-mean()-Zaxis"   num                                     
+[24] "timebodygyroscope-standarddeviation()-Xaxis"  num                         
+[25] "timebodygyroscope-standarddeviation()-Yaxis"  num                         
+[26] "timebodygyroscope-standarddeviation()-Zaxis"  num                         
+[27] "timebodygyroscopejerksignals-mean()-Xaxis"    num                         
+[28] "timebodygyroscopejerksignals-mean()-Yaxis"    num                         
+[29] "timebodygyroscopejerksignals-mean()-Zaxis"    num                         
+[30] "timebodygyroscopejerksignals-standarddeviation()-Xaxis"  num                
+[31] "timebodygyroscopejerksignals-standarddeviation()-Yaxis"  num              
+[32] "timebodygyroscopejerksignals-standarddeviation()-Zaxis"  num              
+[33] "timebodyaccelerometermagnitude-mean()"        num                         
+[34] "timebodyaccelerometermagnitude-standarddeviation()"    num                
+[35] "timeGravityaccelerometermagnitude-mean()"     num                         
+[36] "timeGravityaccelerometermagnitude-standarddeviation()" num                
+[37] "timebodyaccelerometerjerksignalsmagnitude-mean()"      num                
+[38] "timebodyaccelerometerjerksignalsmagnitude-standarddeviation()"  num       
+[39] "timebodygyroscopemagnitude-mean()"          num                           
+[40] "timebodygyroscopemagnitude-standarddeviation()"     num                   
+[41] "timebodygyroscopejerksignalsmagnitude-mean()"       num                   
+[42] "timebodygyroscopejerksignalsmagnitude-standarddeviation()"  num           
+[43] "frequencybodyaccelerometer-mean()-Xaxis"    num                           
+[44] "frequencybodyaccelerometer-mean()-Yaxis"    num                           
+[45] "frequencybodyaccelerometer-mean()-Zaxis"    num                           
+[46] "frequencybodyaccelerometer-standarddeviation()-Xaxis"  num                
+[47] "frequencybodyaccelerometer-standarddeviation()-Yaxis"  num                
+[48] "frequencybodyaccelerometer-standarddeviation()-Zaxis"  num             
+[49] "frequencybodyaccelerometerjerksignals-mean()-Xaxis"    num                
+[50] "frequencybodyaccelerometerjerksignals-mean()-Yaxis"    num                
+[51] "frequencybodyaccelerometerjerksignals-mean()-Zaxis"    num                
+[52] "frequencybodyaccelerometerjerksignals-standarddeviation()-Xaxis"  num     
+[53] "frequencybodyaccelerometerjerksignals-standarddeviation()-Yaxis"  num     
+[54] "frequencybodyaccelerometerjerksignals-standarddeviation()-Zaxis"  num     
+[55] "frequencybodygyroscope-mean()-Xaxis"      num                             
+[56] "frequencybodygyroscope-mean()-Yaxis"      num                             
+[57] "frequencybodygyroscope-mean()-Zaxis"      num                             
+[58] "frequencybodygyroscope-standarddeviation()-Xaxis"  num                    
+[59] "frequencybodygyroscope-standarddeviation()-Yaxis"  num                    
+[60] "frequencybodygyroscope-standarddeviation()-Zaxis"  num                    
+[61] "frequencybodyaccelerometermagnitude-mean()"        num                    
+[62] "frequencybodyaccelerometermagnitude-standarddeviation()"    num           
+[63] "frequencybodybodyaccelerometerjerksignalsmagnitude-mean()"  num           
+[64] "frequencybodybodyaccelerometerjerksignalsmagnitude-standarddeviation()"  num
+[65] "frequencybodybodygyroscopemagnitude-mean()"        num
+[66] "frequencybodybodygyroscopemagnitude-standarddeviation()"    num           
+[67] "frequencybodybodygyroscopejerksignalsmagnitude-mean()"      num           
+[68] "frequencybodybodygyroscopejerksignalsmagnitude-standarddeviation()"    num
